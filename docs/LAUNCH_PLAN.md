@@ -178,17 +178,14 @@ Proposal:
 
 ## Next steps (as of 2026-11-25)
 
-1. **Push** the commits to the private repo. CI runs for the first time there.
-2. **Cloudflare account:** created (2026-11-25). No Git connection yet.
-3. **Prepare the public repo:**
-   - Add a GPL-3.0 `LICENSE`.
-   - Update the README for players and contributors.
-   - Check the files once more for anything private.
-   - Then make one fresh commit with no history into a new public GitHub repo. The owner OKs the repo name and making it
-     public.
-   - Turn on the Actions pull-request setting above.
-   - Point the footer's bug link at the new repo, if its name is different.
-   - The current private repo stays as the archive. From then on, work continues in the public one.
+1. Done: pushed, and CI passes.
+2. Done: Cloudflare account created (2026-11-25).
+3. Done 2026-11-26: the public repo `jack-berry4/OPTC-Rumble-Sim` was created from one fresh commit.
+   - It has the GPL-3.0 license, the player README and the docs made generic.
+   - The old private repo is now `OPTC-Rumble-Sim-archive`. This folder's `origin` is the public repo and `archive`
+     is the private one.
+   - Commits use GitHub's no-reply address.
+   - The Actions pull-request setting is on.
 4. **Connect Cloudflare Pages to the public repo:**
    - Project name `optc-rumble-sim`, which gives the address optc-rumble-sim.pages.dev.
    - Build command `npm run build`, output folder `dist`.
