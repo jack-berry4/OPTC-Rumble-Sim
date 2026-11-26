@@ -18,7 +18,10 @@ import io
 import json
 import struct
 import sys
+import time
+import urllib.error
 import urllib.request
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -49,21 +52,39 @@ def key(uid: float) -> str:
     return str(int(uid)) if float(uid).is_integer() else str(uid)
 
 
+#: why downloads failed this run ("404", "429", "timeout", "not a PNG", ...), printed by download_all
+FAILS: Counter = Counter()
+
+
 def fetch(uid: float) -> bool:
+    """One unit's thumbnail into the cache. Only a real "not found" in every region is remembered (.missing): a
+    refused, throttled or timed-out request is retried a little and otherwise left for the next run."""
     out = CACHE / f"{key(uid)}.png"
     if out.exists():
         return True
-    for url in thumb_urls(uid):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=20) as r:
-                data = r.read()
-            if data[:4] == b"\x89PNG":
-                out.write_bytes(data)
-                return True
-        except Exception:  # noqa: BLE001 - try the next region
-            continue
-    (CACHE / f"{key(uid)}.missing").write_text("")
+    not_found = 0
+    urls = thumb_urls(uid)
+    for url in urls:
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": UA})
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    data = r.read()
+                if data[:4] == b"\x89PNG":
+                    out.write_bytes(data)
+                    return True
+                FAILS["not a PNG"] += 1
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    not_found += 1
+                    break
+                FAILS[str(e.code)] += 1
+            except Exception as e:  # noqa: BLE001 - network trouble: retry
+                FAILS[type(e).__name__] += 1
+            time.sleep(1.5 * (attempt + 1))
+    if not_found == len(urls):
+        (CACHE / f"{key(uid)}.missing").write_text("")
     return False
 
 
@@ -83,12 +104,20 @@ def download_all(ids: list[float]) -> None:
     if not todo:
         return
     print(f"Downloading {len(todo)} thumbnails ...", flush=True)
-    done = 0
-    with ThreadPoolExecutor(16) as ex:
-        for _ in ex.map(fetch, todo):
+    done = got = 0
+    with ThreadPoolExecutor(8) as ex:
+        for ok in ex.map(fetch, todo):
             done += 1
+            got += ok
             if done % 250 == 0:
                 print(f"  {done}/{len(todo)}", flush=True)
+    print(f"  got {got} of {len(todo)}" + (f"; failures: {dict(FAILS)}" if FAILS else ""), flush=True)
+
+
+def coverage(ids: list[float]) -> float:
+    """Share of the units that have a thumbnail or are known to have none (OPTC-DB has no picture for them)."""
+    ok = sum(1 for i in ids if (CACHE / f"{key(i)}.png").exists() or (CACHE / f"{key(i)}.missing").exists())
+    return ok / max(1, len(ids))
 
 
 def features(img) -> "list[float]":

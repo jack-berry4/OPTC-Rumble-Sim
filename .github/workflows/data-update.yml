@@ -36,8 +36,8 @@ jobs:
           path: |
             .cache/thumbs
             .cache/nydato
-          key: data-update-${{ github.run_id }}
-          restore-keys: data-update-
+          key: data-update-v2-${{ github.run_id }}
+          restore-keys: data-update-v2-
 
       - name: OPTC-DB (2Shankz)
         env:

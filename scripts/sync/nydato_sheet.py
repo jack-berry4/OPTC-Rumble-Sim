@@ -164,6 +164,12 @@ def main() -> int:
     # portraits -> units
     ids = thumbs.unit_ids()
     thumbs.download_all(ids)
+    # without (nearly) every thumbnail the portraits match the wrong units: stop rather than write nonsense
+    cov = thumbs.coverage(ids)
+    if cov < 0.97:
+        print(f"Only {cov:.0%} of the unit thumbnails could be downloaded (OPTC-DB's site refused or timed out): "
+              "not updating. Run it again later.")
+        return 1
     have, mat = thumbs.load_features(ids)
     IMG_CACHE.mkdir(parents=True, exist_ok=True)
     urls = sorted({u for c in comps for u in c["images"]} | {u for c in subs.values() for u in c["images"] + c["options"]} | set(tier_urls))
@@ -223,6 +229,11 @@ def main() -> int:
     for t, why in unsure:
         print(f"  unsure: {t}: {why}")
     old = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else None
+    # a sanity check on the matching: the tier list doesn't shrink to a fraction of itself in one update
+    if old and len(tier_list) < 0.5 * len(old.get("tierList", [])) and "--force" not in sys.argv:
+        print(f"The tier list went from {len(old['tierList'])} units to {len(tier_list)}: the portraits probably "
+              "didn't match. Not updating (--force writes it anyway).")
+        return 1
     data = {"source": "Nydato's Rumble Sheet", "url": SHEET, "updated": updated, "since": since, "comps": out, "tierList": tier_list}
     if old and all(old.get(k) == data[k] for k in ("comps", "tierList", "updated", "since")):
         print("No change.")
