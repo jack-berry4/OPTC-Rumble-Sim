@@ -1,0 +1,50 @@
+# Sensitivity of win rates to assumed values (2026-11-13)
+
+Made by `scripts/sensitivity.ts` (1,200 paired battles per setting per matchup; run 9 and run 8 teams with run 9 rules, run 1 teams with run 1 rules). "Change" is the win-rate change in percentage points against the baseline, on the same battle seeds; "se" its standard error.
+
+Re-run after the tag fixes of 2026-11-13 (docs/TAGS.md), which moved the baselines: run 9 58.5% -> 40.7%, run 8 40.2% -> 70.3% (run 1 unchanged within noise). The queue rows (SPD cap, pick rule) are settled rules kept for reference.
+
+```
+baseline win rate: run9 40.7%, run8 70.3%, run1 27.8%
+
+setting                                    | run9 change (± se)   | run8 change (± se)   | run1 change (± se)  
+special radial ranges = x0.5               | -4.5 (± 1.0)         | -24.3 (± 1.8)        | +0.0 (± 0.0)        
+queue SPD cap = 250                        | +21.0 (± 2.0)        | -14.4 (± 2.0)        | +0.0 (± 0.0)        
+queue pick rule = "gauge"                  | +19.6 (± 2.0)        | +1.8 (± 1.6)         | +2.5 (± 1.0)        
+unmeasured units' stay (+s) = -0.5         | -5.8 (± 1.9)         | +15.5 (± 1.6)        | +0.0 (± 0.0)        
+unmeasured units' stay (+s) = 0.7          | +4.1 (± 2.0)         | -10.6 (± 2.0)        | +0.0 (± 0.0)        
+Special CT speed per level = 0.02          | +6.5 (± 1.0)         | -3.3 (± 1.0)         | +0.0 (± 0.0)        
+special fires from (px) = 115              | +4.4 (± 1.4)         | +0.3 (± 0.6)         | +0.0 (± 0.0)        
+buff part of a ranged special reaches = 1  | +0.0 (± 0.0)         | -4.3 (± 1.2)         | +0.0 (± 0.0)        
+settle after home (s) = 0                  | -3.3 (± 1.9)         | -3.8 (± 1.3)         | +1.1 (± 0.9)        
+Special CT speed per level = 0.04          | -3.5 (± 0.7)         | +0.7 (± 0.9)         | +0.0 (± 0.0)        
+settle after home (s) = 0.4                | +3.4 (± 1.7)         | -1.1 (± 1.4)         | -0.9 (± 1.2)        
+base miss chance = 0.13                    | +0.0 (± 1.0)         | +0.3 (± 0.7)         | -3.2 (± 1.2)        
+queue look-ahead (s) = 0.5                 | -1.6 (± 1.4)         | -3.2 (± 1.2)         | -0.7 (± 0.9)        
+bench entry delay (s) = 2.1                | +0.5 (± 0.8)         | +0.5 (± 0.4)         | +3.0 (± 1.0)        
+base miss chance = 0.06                    | -0.1 (± 0.8)         | +0.0 (± 0.6)         | +2.8 (± 1.2)        
+special radial ranges = x1.5               | +1.7 (± 0.6)         | -2.4 (± 1.4)         | +0.0 (± 0.0)        
+queue look-ahead (s) = 1.526               | +1.6 (± 1.4)         | -2.2 (± 1.3)         | +1.8 (± 0.8)        
+Half Stats halves max HP = true            | +1.2 (± 0.5)         | +2.1 (± 0.9)         | +0.0 (± 0.0)        
+walk-out speed (px/s) = 800                | +1.6 (± 1.2)         | -0.9 (± 1.0)         | -0.9 (± 1.0)        
+knock-back stop (s) = 2                    | -0.4 (± 1.2)         | +0.9 (± 0.9)         | -1.0 (± 0.9)        
+knock-back one tile vs two rows = 0.6      | -1.0 (± 0.5)         | -0.4 (± 0.4)         | +0.8 (± 0.5)        
+walk-out speed (px/s) = 1100               | -0.8 (± 1.2)         | +1.0 (± 0.9)         | -0.2 (± 1.0)        
+heal animation (s) = 0.4                   | +0.9 (± 0.6)         | +0.5 (± 0.4)         | +0.0 (± 0.0)        
+Full attack extra time (s) = 1.5           | +0.8 (± 0.4)         | +0.4 (± 0.5)         | +0.0 (± 0.0)        
+base guard chance = guard 0.08             | +0.7 (± 0.4)         | +0.4 (± 0.3)         | -0.1 (± 0.6)        
+knock-back stop (s) = 0                    | +0.0 (± 0.9)         | +0.3 (± 0.7)         | +0.5 (± 0.7)        
+Full attack extra time (s) = 0             | +0.5 (± 0.5)         | -0.1 (± 0.7)         | +0.0 (± 0.0)        
+bench entry delay (s) = 1.5                | -0.1 (± 0.9)         | +0.3 (± 0.5)         | -0.4 (± 0.7)        
+base guard chance = guard 0.03             | +0.4 (± 0.4)         | -0.4 (± 0.2)         | -0.3 (± 0.5)        
+knock-back one tile vs two rows = 0.2      | -0.3 (± 0.5)         | +0.2 (± 0.4)         | -0.1 (± 0.5)        
+guarded hits can knock back = false        | +0.3 (± 0.4)         | +0.1 (± 0.3)         | +0.0 (± 0.3)        
+heal areas = x1.5                          | +0.2 (± 0.1)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+heal animation (s) = 1.2                   | +0.0 (± 0.6)         | -0.2 (± 0.4)         | +0.0 (± 0.0)        
+heal areas = x0.5                          | -0.1 (± 0.1)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+special line lengths = x1.5                | +0.0 (± 0.0)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+special line width = 50                    | +0.0 (± 0.0)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+special line width = 120                   | +0.0 (± 0.0)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+special line lengths = x0.5                | +0.0 (± 0.0)         | +0.0 (± 0.0)         | +0.0 (± 0.0)        
+buff part of a ranged special reaches = 0.75 | +0.0 (± 0.0)         | +0.0 (± 0.0)         | +0.0 (± 0.0)
+```

@@ -1,0 +1,84 @@
+# Weekly data update from the two web sources (docs/LAUNCH_PLAN.md, "Keeping the site up to date"):
+#   - 2Shankz OPTC-DB: rebuilds data/units.json when it has new commits (--no-game: the game data stays as last built
+#     on the PC; game-server syncs run there with Sync Data.bat)
+#   - Nydato's Rumble Sheet: src/engine/nydato-comps.json (default teams, generator templates)
+# Runs the checks and tests, then opens (or updates) a pull request "Data update" if anything changed. Cloudflare
+# builds that branch into a preview link; merging it publishes the data. Nothing goes live without a merge.
+# Free: GitHub Actions minutes (a few per run) and the Actions cache. The repo setting "Allow GitHub Actions to create
+# and approve pull requests" (Settings > Actions > General) must be on.
+name: Data update
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency: data-update
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pillow numpy
+      - run: npm ci
+      # the OPTC-DB thumbnails the sheet's portraits are matched against (~60 MB): downloaded once, then only new units
+      - uses: actions/cache@v6
+        with:
+          path: |
+            .cache/thumbs
+            .cache/nydato
+          key: data-update-${{ github.run_id }}
+          restore-keys: data-update-
+
+      - name: OPTC-DB (2Shankz)
+        env:
+          OPTC_GAME_DIR: /nonexistent # no game files here: keep the game data as last built
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          npm run --silent db:check
+          code=$?
+          set -e
+          if [ "$code" = 10 ]; then npx tsx scripts/db/build.ts --no-game
+          elif [ "$code" != 0 ]; then exit "$code"; fi
+
+      - name: Nydato's Rumble Sheet
+        run: npm run --silent sync:nydato
+
+      - name: Checks and tests
+        run: npm run db:verify
+
+      - name: Build
+        run: npm run build
+
+      - name: Pull request text
+        run: |
+          {
+            echo "Weekly data update from OPTC-DB and Nydato's Rumble Sheet (.github/workflows/data-update.yml)."
+            echo "Checks, tests and the build passed. Cloudflare's preview link for this branch shows the site with the new data; merging publishes it."
+            echo
+            git status --short -- data src/engine
+            new=$(git status --porcelain -- data/reports | awk '{print $2}' | grep '\.md$' | tail -1)
+            if [ -n "$new" ]; then echo; cat "$new"; fi
+          } > "$RUNNER_TEMP/pr.md"
+          head -c 60000 "$RUNNER_TEMP/pr.md" > "$RUNNER_TEMP/pr-short.md"
+
+      - uses: peter-evans/create-pull-request@v8
+        with:
+          branch: data-update
+          delete-branch: true
+          title: Data update (OPTC-DB / Nydato's sheet)
+          commit-message: "Data update: OPTC-DB / Nydato's Rumble Sheet"
+          body-path: ${{ runner.temp }}/pr-short.md
+          add-paths: |
+            data/**
+            src/engine/nydato-comps.json

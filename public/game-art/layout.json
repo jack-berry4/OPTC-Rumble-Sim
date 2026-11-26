@@ -1,0 +1,1249 @@
+{
+ "layers": [
+  {
+   "href": "plaza/still-0.webp",
+   "x": 0,
+   "y": 300,
+   "w": 1080,
+   "h": 780
+  },
+  {
+   "name": "audience_a",
+   "frames": [
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-0.webp",
+     "x": 948,
+     "y": 411,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-1.webp",
+     "x": 948,
+     "y": 404,
+     "w": 69,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    },
+    {
+     "href": "plaza/audience_a-2.webp",
+     "x": 955,
+     "y": 402,
+     "w": 68,
+     "h": 112
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-1.webp",
+   "x": 287,
+   "y": 573,
+   "w": 228,
+   "h": 54
+  },
+  {
+   "name": "audience_b",
+   "frames": [
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-0.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-1.webp",
+     "x": 296,
+     "y": 484,
+     "w": 205,
+     "h": 121
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    },
+    {
+     "href": "plaza/audience_b-2.webp",
+     "x": 296,
+     "y": 482,
+     "w": 204,
+     "h": 123
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-2.webp",
+   "x": 61,
+   "y": 669,
+   "w": 95,
+   "h": 48
+  },
+  {
+   "name": "audience_c",
+   "frames": [
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-0.webp",
+     "x": 76,
+     "y": 569,
+     "w": 75,
+     "h": 128
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    },
+    {
+     "href": "plaza/audience_c-1.webp",
+     "x": 81,
+     "y": 572,
+     "w": 78,
+     "h": 125
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-3.webp",
+   "x": 393,
+   "y": 436,
+   "w": 188,
+   "h": 60
+  },
+  {
+   "name": "audience_f",
+   "frames": [
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-0.webp",
+     "x": 409,
+     "y": 343,
+     "w": 159,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-1.webp",
+     "x": 409,
+     "y": 345,
+     "w": 162,
+     "h": 136
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    },
+    {
+     "href": "plaza/audience_f-2.webp",
+     "x": 409,
+     "y": 346,
+     "w": 158,
+     "h": 137
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-4.webp",
+   "x": 658,
+   "y": 514,
+   "w": 204,
+   "h": 65
+  },
+  {
+   "name": "audience_g",
+   "frames": [
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-0.webp",
+     "x": 656,
+     "y": 407,
+     "w": 188,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-1.webp",
+     "x": 657,
+     "y": 407,
+     "w": 187,
+     "h": 151
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    },
+    {
+     "href": "plaza/audience_g-2.webp",
+     "x": 660,
+     "y": 406,
+     "w": 184,
+     "h": 152
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "name": "fire@652",
+   "frames": [
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-0.webp",
+     "x": 257,
+     "y": 300,
+     "w": 41,
+     "h": 31
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-1.webp",
+     "x": 261,
+     "y": 300,
+     "w": 24,
+     "h": 25
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    },
+    {
+     "href": "plaza/fire-652-2.webp",
+     "x": 260,
+     "y": 300,
+     "w": 42,
+     "h": 29
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-5.webp",
+   "x": 721,
+   "y": 389,
+   "w": 95,
+   "h": 49
+  },
+  {
+   "name": "audience_h",
+   "frames": [
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-0.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    },
+    {
+     "href": "plaza/audience_h-1.webp",
+     "x": 734,
+     "y": 308,
+     "w": 68,
+     "h": 110
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-6.webp",
+   "x": 160,
+   "y": 327,
+   "w": 95,
+   "h": 49
+  },
+  {
+   "name": "audience_i",
+   "frames": [
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-0.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    },
+    {
+     "href": "plaza/audience_i-1.webp",
+     "x": 193,
+     "y": 300,
+     "w": 58,
+     "h": 65
+    }
+   ],
+   "frameS": 0.022222
+  },
+  {
+   "href": "plaza/still-7.webp",
+   "x": 313,
+   "y": 452,
+   "w": 94,
+   "h": 49
+  },
+  {
+   "name": "audience_j",
+   "frames": [
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-0.webp",
+     "x": 322,
+     "y": 371,
+     "w": 62,
+     "h": 105
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    },
+    {
+     "href": "plaza/audience_j-1.webp",
+     "x": 322,
+     "y": 373,
+     "w": 62,
+     "h": 103
+    }
+   ],
+   "frameS": 0.022222
+  }
+ ],
+ "sprites": []
+}

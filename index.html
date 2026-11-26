@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPTC Rumble Sim</title>
+    <meta name="description" content="Pirate Rumble simulator for One Piece Treasure Cruise: build teams, watch a battle play out, run win rates over thousands of battles, import your box from a screen recording and generate teams from it." />
+    <meta name="theme-color" content="#1d1d1f" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OPTC Rumble Sim" />
+    <meta property="og:description" content="Pirate Rumble simulator for One Piece Treasure Cruise: battles, win rates, box import and a team generator." />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      // Night mode set in Settings, before the first paint (no flash of the other theme)
+      try { var t = localStorage.getItem("rumble-sim-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+ "layers": [
+  {
+   "href": "assault/far-lava.webp",
+   "x": 0,
+   "y": 209,
+   "w": 1622,
+   "h": 871,
+   "scroll": {
+    "dx": -541.75,
+    "dy": 91.0,
+    "period": 21.3333
+   }
+  },
+  {
+   "href": "assault/far.webp",
+   "x": 0,
+   "y": 300,
+   "w": 1080,
+   "h": 780
+  },
+  {
+   "href": "assault/near-lava.webp",
+   "x": 0,
+   "y": 208,
+   "w": 1624,
+   "h": 872,
+   "scroll": {
+    "dx": -543.45,
+    "dy": 91.28,
+    "period": 5.3333
+   }
+  },
+  {
+   "href": "assault/near.webp",
+   "x": 0,
+   "y": 300,
+   "w": 1080,
+   "h": 780
+  }
+ ],
+ "sprites": []
+}

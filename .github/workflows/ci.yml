@@ -1,0 +1,19 @@
+# Typecheck and tests on every push and pull request (docs/LAUNCH_PLAN.md, Phase 1). Cloudflare Pages builds and
+# deploys on its own; this only shows a red X when something is broken.
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build

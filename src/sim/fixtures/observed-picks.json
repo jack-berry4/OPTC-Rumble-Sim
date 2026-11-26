@@ -1,0 +1,46 @@
+{
+  "source": "Jack, watching the recordings (2026-11-11). Beats are approximate battle times; slots as in src/engine/defaultTeams.ts (attackers A1-A5, defenders D1-D5, bench D6-D8). Use for replay checks of the queue and targeting rules.",
+  "run1-b1": {
+    "note": "Before ~19.4 s a Pacifista (A3, PX-1) was picked to attack Cabaji (D3), who was locked in next; the hit at 19.37 s was guarded and knocked Cabaji back, so he couldn't act at his beat: Buggy (2nd) went. The next locked unit was the Black crew, Cabaji projected behind it; Black crew went at ~21.4 s.",
+    "picks": [
+      { "t": 19.9, "actor": "D1", "note": "Buggy, because the locked-in Cabaji was knocked back" },
+      { "t": 21.4, "actor": "D4|D5", "note": "Shooter Group Crew (Black)" }
+    ],
+    "knockbacks": [{ "t": 19.37, "target": "D3", "guarded": true }]
+  },
+  "run1-b4": {
+    "note": "No NEXT column in this video. Cabaji hit at ~19.4 s, not knocked back; the Black crew goes, then Cabaji. Around 24-30 s: Cabaji -> PX-5 (a miss, timer ~76), PX-4 -> Buggy, Green crew -> PX-2, PX-5 -> Cabaji, Mohji -> PX-3, PX-2 -> Green crew.",
+    "picks": [
+      { "t": 23.9, "actor": "D3", "target": "A4", "note": "Cabaji -> PX-5, a miss (timer ~76)" },
+      { "t": 24.5, "actor": "A1", "target": "D1" },
+      { "t": 21.4, "actor": "D4|D5", "note": "Black crew, then Cabaji next" },
+      { "t": 26.0, "actor": "D6", "target": "A2" },
+      { "t": 27.5, "actor": "A4", "target": "D3" },
+      { "t": 29.0, "actor": "D2", "target": "A5" },
+      { "t": 30.6, "actor": "A2", "target": "D6" }
+    ]
+  },
+  "run1-b5": {
+    "note": "No NEXT column. Same as battle 4 around 19-23 s: Cabaji hit, not knocked back; the Black crew goes, then Cabaji."
+  },
+  "run3-b1": {
+    "note": "NEXT column readings by the user: at ~12.2 s the Blue crew was on top and Luffy 2nd; after that beat Luffy was on top. Cabaji stopped attacking Luffy at about the 12.2 s beat. The Pacifista hit on Buggy at ~19.2 s was guarded and knocked him back; he went one beat after the Black crew.",
+    "picks": [
+      { "t": 9.2, "actor": "D3", "target": "A1", "note": "Cabaji -> Luffy (timer ~91)" },
+      { "t": 10.7, "actor": "D4|D5", "target": "A2", "note": "Black crew -> King" },
+      { "t": 12.2, "actor": "D4|D5", "target": "A3|A4|A5", "note": "Blue crew -> a Pacifista" },
+      { "t": 13.8, "actor": "A1", "target": "D3", "note": "Luffy -> Cabaji (last attacker)" },
+      { "t": 15.3, "actor": "A3|A4|A5", "target": "D1", "note": "PX -> Buggy; Buggy had been next" },
+      { "t": 16.8, "actor": "D2", "target": "A2", "note": "Mohji -> King; Buggy skipped (under attack)" },
+      { "t": 18.3, "actor": "A3|A4|A5", "target": "D1", "note": "PX -> Buggy, guarded, knocked back" },
+      { "t": 19.9, "actor": "D4|D5", "target": "A1", "note": "Black crew -> Luffy" },
+      { "t": 21.4, "actor": "D1", "target": "A3|A4|A5", "note": "Buggy -> a Pacifista" },
+      { "t": 22.9, "actor": "A2", "target": "D4|D5", "note": "King KOs the Blue crew" },
+      { "t": 24.4, "actor": "A3|A4|A5", "target": "D2", "note": "PX -> Mohji" }
+    ],
+    "knockbacks": [{ "t": 19.2, "target": "D1", "guarded": true }]
+  },
+  "run3-b4": {
+    "note": "Same as battle 1 from ~9 to ~14 s: Cabaji -> Luffy, Black crew -> King, Blue crew -> a Pacifista, Luffy -> Cabaji."
+  }
+}

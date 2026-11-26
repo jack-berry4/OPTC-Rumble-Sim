@@ -1,0 +1,51 @@
+{
+  "builtAt": "2026-11-25T19:05:20.357Z",
+  "optcdb": {
+    "repo": "2Shankz/optc-db.github.io",
+    "sha": "a5689c133722e8ab7f80e02cb4be306e47824fc7",
+    "date": "2026-11-23T23:46:57Z",
+    "message": "Nov EoM Batch PVP Filters",
+    "files": {
+      "rumble.json": "53d9b75f84cc37ae78098a8448d242aa44e716610fbb550e5181c5628f3263ca",
+      "units.js": "911fcd5cd798f934c10c454971ac09abc109915346bcd2c26ad1778b7b932b38",
+      "families.js": "51a671dffa710aab815a70f8f1b1378006dc42de1601d7d95a9abfd3253855ab",
+      "tags.js": "5244fc412c6de11525814b1d3948b4c106b80579104446bf5931d1d732b0de26",
+      "details.js": "a847ef0f2d6eafcdd7babdc1f812ff5c94e9d8e82d1af8be1205559ee6978dad",
+      "flags.js": "cf05159b77c818266704a44379c496b5d1a003e9a2eb0f9b6ab7d90b17ec04ec",
+      "cooldowns.js": "4d6bfcf4714d82194e5ebc9825f2fd0b906634100964c7d3766096e74dc062a1",
+      "aliases.js": "e387f052964747f1c4ba2bcd1535be9b6aa3aa505f5519b2ea95d48056371b87",
+      "evolutions.js": "1c297a18ce7c802670794992506f4ebd3a65b072ab34d6869a0a064390dd3759"
+    }
+  },
+  "game": {
+    "sakuraDb": {
+      "path": "../OPTC Decomp/master_db_tool/sakura.db",
+      "size": 156192768,
+      "mtime": "2026-11-24T17:03:34.768Z",
+      "sha256": "aa8c0dfb917618c3e98c7ee848295f730c385cf65f6bea9d344d013e5f87cf89"
+    },
+    "dataTimestamp": "2026-11-19T05:03:34.000Z",
+    "characters": 6803,
+    "motionManifest": {
+      "path": "../OPTC Decomp/master_db_tool/motion_ssd/motion_manifest.csv",
+      "size": 39805126,
+      "mtime": "2026-11-24T17:04:21.922Z",
+      "sha256": "92f95ee8ea5b57d29333230a55953dc0b50985b369be5fed592e8edb6a03a8f3"
+    }
+  },
+  "attackTimings": {
+    "path": "tools/ssd/out/ssd_timings.csv",
+    "size": 1742966,
+    "mtime": "2026-11-24T17:07:10.570Z",
+    "sha256": "7ac3a0e733588b5f2b89e0eb30908dc89d736737b1643b98faa41b77bc110684"
+  },
+  "known": {
+    "capture-2026-11-14": "battle capture rumble.json (user_pirates_arena_battle_id 385318673, started 2026-11-14T02:16:12.000Z)"
+  },
+  "counts": {
+    "units": 4678,
+    "withGame": 4653,
+    "withKnown": 16,
+    "withAttack": 4168
+  }
+}

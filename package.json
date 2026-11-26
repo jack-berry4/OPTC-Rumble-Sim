@@ -1,0 +1,45 @@
+{
+  "name": "optc-rumble-sim",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "data:split": "tsx scripts/db/split.ts",
+    "predev": "npm run data:split",
+    "dev": "vite",
+    "prebuild": "npm run data:split",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "import-data": "tsx scripts/db/build.ts",
+    "sync:game": "python -I \"../OPTC Decomp/rumble-sync/game_sync.py\"",
+    "sync:phone": "python -I \"../OPTC Decomp/rumble-sync/phone_sync.py\"",
+    "db:check": "tsx scripts/db/check.ts",
+    "db:build": "tsx scripts/db/build.ts",
+    "db:verify": "tsc --noEmit -p . && tsx scripts/check-effects.ts && vitest run",
+    "db:update": "tsx scripts/db/build.ts && npm run db:verify",
+    "sim": "tsx scripts/sim.ts",
+    "import-text": "tsx scripts/import-rumble-text.ts",
+    "sync:assault": "npm run --silent data:split && python -I scripts/db/assault.py",
+    "assault:report": "python -I scripts/db/assault_report.py",
+    "sync:nydato": "npm run --silent data:split && python -I scripts/sync/nydato_sheet.py",
+    "portraits": "npm run --silent data:split && python -I scripts/portraits/thumbs.py --features",
+    "meta:bundle": "esbuild scripts/meta/run.ts --bundle --platform=node --format=esm --target=node22 --outfile=.cache/meta-dist/meta.mjs --log-level=warning"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  }
+}

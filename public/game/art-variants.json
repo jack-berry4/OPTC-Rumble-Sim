@@ -1,0 +1,123 @@
+{
+ "source": "game master database (MstImmersiveIllust_)",
+ "units": [
+  {
+   "unitId": 4365,
+   "serverId": 14251,
+   "name": "Luffy & Zoro & Sanji",
+   "arts": [
+    {
+     "id": 1425100,
+     "parts": [
+      1425101,
+      1425102,
+      1425103
+     ],
+     "icon": "immersive_illust_14251_1425100_t1.png"
+    },
+    {
+     "id": 1425101,
+     "parts": [
+      1425101
+     ],
+     "icon": "immersive_illust_14251_1425101_t1.png"
+    },
+    {
+     "id": 1425102,
+     "parts": [
+      1425102
+     ],
+     "icon": "immersive_illust_14251_1425102_t1.png"
+    },
+    {
+     "id": 1425103,
+     "parts": [
+      1425103
+     ],
+     "icon": "immersive_illust_14251_1425103_t1.png"
+    },
+    {
+     "id": 1425104,
+     "parts": [
+      1425101,
+      1425102
+     ],
+     "icon": "immersive_illust_14251_1425104_t1.png"
+    },
+    {
+     "id": 1425105,
+     "parts": [
+      1425101,
+      1425103
+     ],
+     "icon": "immersive_illust_14251_1425105_t1.png"
+    },
+    {
+     "id": 1425106,
+     "parts": [
+      1425102,
+      1425103
+     ],
+     "icon": "immersive_illust_14251_1425106_t1.png"
+    }
+   ]
+  },
+  {
+   "unitId": 4490,
+   "serverId": 14653,
+   "name": "Luffy & Bonney",
+   "arts": [
+    {
+     "id": 1465300,
+     "parts": [
+      1465301,
+      1465302
+     ],
+     "icon": "immersive_illust_14653_1465300_t1.png"
+    },
+    {
+     "id": 1465301,
+     "parts": [
+      1465301
+     ],
+     "icon": "immersive_illust_14653_1465301_t1.png"
+    },
+    {
+     "id": 1465302,
+     "parts": [
+      1465302
+     ],
+     "icon": "immersive_illust_14653_1465302_t1.png"
+    }
+   ]
+  },
+  {
+   "unitId": 4571,
+   "serverId": 14907,
+   "name": "Imu",
+   "arts": [
+    {
+     "id": 1490700,
+     "parts": [
+      1490701
+     ],
+     "icon": "immersive_illust_14907_1490700_t1.png"
+    }
+   ]
+  },
+  {
+   "unitId": 4629,
+   "serverId": 17517,
+   "name": "Loki",
+   "arts": [
+    {
+     "id": 1751700,
+     "parts": [
+      1751701
+     ],
+     "icon": "immersive_illust_17517_1751700_t1.png"
+    }
+   ]
+  }
+ ]
+}

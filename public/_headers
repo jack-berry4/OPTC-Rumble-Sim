@@ -1,0 +1,31 @@
+# Cloudflare Pages response headers (docs/LAUNCH_PLAN.md, Phase 1). Copied into dist/ by the build.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Vite's hashed code and styles: a name never gets new content, so browsers keep them for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Unit data under its content-hash folder (scripts/db/split.ts): same as above.
+/data/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Game rules, art and the import's reference files keep their names across updates: a day, then a quick check.
+/game/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/game-art/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/game-ui/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/import/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/ocr/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# The page itself always checks for a new deploy.
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
