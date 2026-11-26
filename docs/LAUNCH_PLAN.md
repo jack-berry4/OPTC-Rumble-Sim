@@ -123,7 +123,8 @@ Kept as is:
 ## Keeping the site up to date (built 2026-11-25)
 
 What is built:
-- **The weekly job:** `.github/workflows/data-update.yml`.
+- **The weekly job:** `.github/workflows/data-update.yml`. It covers OPTC-DB only. Nydato's sheet stays a PC step
+  (2026-11-26), because Google won't serve the sheet's portrait images to GitHub's servers.
 - **The publish step:** step 5 of `Sync Data.bat`.
 - **Game-server scripts moved out:** they are now in `../OPTC Decomp/rumble-sync/`, which has its own local git
   history.
@@ -133,7 +134,6 @@ What is built:
 
 Everything stays free:
 - GitHub Actions is unlimited for public repos (2,000 minutes a month while private). One run takes a few minutes.
-- The Actions cache is free up to 10 GB. We use about 130 MB.
 - Cloudflare allows 500 builds a month. We'd use a few a week.
 
 The weekly job needs one setting in the public repo, Settings → Actions → General → "Allow GitHub Actions to create and
@@ -152,14 +152,14 @@ A page that is already open keeps its data until it is reloaded.
 | Source | What it updates | Needs | Where it can run |
 |---|---|---|---|
 | 2Shankz OPTC-DB (`db:check`, `db:update`) | `data/units.json` (new units, kit fixes) | network only (`build.ts --no-game` keeps the last game data) | GitHub Actions or this PC |
-| Nydato's sheet (`sync:nydato`) | `src/engine/nydato-comps.json` (default teams, generator templates) | network only | GitHub Actions or this PC |
+| Nydato's sheet (`sync:nydato`) | `src/engine/nydato-comps.json` (default teams, generator templates) | network only, but Google refuses GitHub's servers the sheet's portrait images | this PC (`Sync Data.bat`) |
 | Game servers (`sync:game`, phone fallback) | game data in units.json, `public/game/*.json` (rules, Assault seasons), portraits | the OPTC Decomp tools and assets (4 GB, decryption) | this PC only |
 | Own meta run (`scripts/meta`) | `src/engine/rumble-meta.json` | hours of compute | a fast PC |
 
 Proposal:
-1. **Scheduled pull request for the two web sources.**
+1. **Scheduled pull request for OPTC-DB.**
    - A GitHub Actions job runs weekly, and can also be started by hand.
-   - It syncs OPTC-DB and the sheet and runs the checks and tests.
+   - It syncs OPTC-DB and runs the checks and tests. Nydato's sheet is left to `Sync Data.bat`.
    - If anything changed, it opens a pull request with `data/reports/` in the description.
    - Cloudflare builds that branch into a preview link, so the new data can be tried before it goes live.
    - Merging the pull request publishes it.

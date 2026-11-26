@@ -54,7 +54,7 @@ Restart `npm run dev` after changing it.
 - The meta the generator ranks against comes from a long simulation run ([docs/META_PLAN.md](docs/META_PLAN.md),
   `scripts/meta/`).
 - Hosting and data updates: [docs/LAUNCH_PLAN.md](docs/LAUNCH_PLAN.md). The site is a static build on Cloudflare
-  Pages. A weekly GitHub job proposes OPTC-DB and sheet updates as pull requests.
+  Pages. A weekly GitHub job proposes OPTC-DB updates as pull requests.
 - The overall design is in [docs/DESIGN.md](docs/DESIGN.md).
 
 ## Credits and license
