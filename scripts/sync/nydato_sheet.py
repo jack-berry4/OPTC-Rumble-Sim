@@ -20,7 +20,10 @@ import html
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
+from collections import Counter
 from datetime import date
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -174,23 +177,31 @@ def main() -> int:
     IMG_CACHE.mkdir(parents=True, exist_ok=True)
     urls = sorted({u for c in comps for u in c["images"]} | {u for c in subs.values() for u in c["images"] + c["options"]} | set(tier_urls))
 
+    fails: Counter = Counter()
+
     def one(url: str):
         f = IMG_CACHE / (re.sub(r"[^A-Za-z0-9]", "", url[-40:]) + ".png")
         if not f.exists():
-            for _ in range(3):
+            for attempt in range(4):
                 try:
                     data = get(re.sub(r"=w\d+-h\d+$", "=w112-h112", url))
                     if data[:4] == b"\x89PNG":
                         f.write_bytes(data)
                         break
-                except Exception:  # noqa: BLE001 - retry
-                    continue
+                    fails[f"not a PNG ({data[:15]!r})"] += 1
+                except urllib.error.HTTPError as e:
+                    fails[f"HTTP {e.code}"] += 1
+                except Exception as e:  # noqa: BLE001 - retry
+                    fails[type(e).__name__] += 1
+                time.sleep(2 * (attempt + 1))
         if not f.exists():
             return url, None
         return url, thumbs.match(thumbs.open_image(f.read_bytes()), have, mat, 3)
 
-    with ThreadPoolExecutor(8) as ex:
+    with ThreadPoolExecutor(4) as ex:
         found = dict(ex.map(one, urls))
+    if fails:
+        print(f"Sheet image download failures: {dict(fails)}")
     unsure = []
 
     def unit(title: str, u: str, option: bool = False):
